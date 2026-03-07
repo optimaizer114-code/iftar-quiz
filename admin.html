@@ -162,7 +162,7 @@
       <div class="setup-note">
         1. Go to <a href="https://jsonbin.io" target="_blank">jsonbin.io</a> → Create bin with <code>{"questions":[],"submissions":{},"currentQuestion":null,"winner":null}</code><br>
         2. Copy <strong style="color:#fff">Master Key</strong> + <strong style="color:#fff">Bin ID</strong> → paste above<br>
-        3. Enter your Netlify URL where you uploaded the files
+        3. Enter your site URL where you uploaded the files
       </div>
       <div class="cfg-status" id="cfgStatus"></div>
     </div>
@@ -239,7 +239,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const API_STATE = '/.netlify/functions/state';
+const API_STATE = '/api/state';
 let cfg   = { url: location.origin };
 let adminToken = sessionStorage.getItem('admin_token') || '';
 function ensureAdminToken(){
